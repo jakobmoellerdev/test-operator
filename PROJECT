@@ -1,0 +1,16 @@
+domain: my.domain
+layout:
+- go.kubebuilder.io/v4-alpha
+projectName: test-operator
+repo: github.com/jakobmoellersap/test-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: my.domain
+  group: operator
+  kind: Sample
+  path: github.com/jakobmoellersap/test-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
